@@ -1,6 +1,5 @@
 import sys
 
-
 def limbo_check(limit:int, length_data:list) -> str:
     for length in length_data:
         if length <= limit:
