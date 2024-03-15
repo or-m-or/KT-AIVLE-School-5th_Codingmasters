@@ -13,14 +13,21 @@ print(all([1, False, 'a']))  # Output: False
 
 
 #### `any(iterable)`
-> 이터러블의 요소가 True인지 확인합니다.
+> 주어진 반복 가능한(iterable) 컨테이너의 요소 중 적어도 하나가 참(True)인지를 검사
 ```python
-print(any([0, False, '']))  # Output: False
-print(any([0, True, '']))  # Output: True
-
-
+print(any([0, False, 0, 0]))  # 모든 요소가 False인 경우
 >>> False
+
+print(any([0, False, 1, 0]))  # 최소 하나의 요소가 True인 경우
 >>> True
+
+print(any([]))  # 비어 있는 반복 가능한 객체인 경우
+>>> False
+
+print(any("Hello"))  # 문자열과 같은 반복 가능한 객체
+print(any(""))  
+>>> True
+>>> False
 ```
 
 
