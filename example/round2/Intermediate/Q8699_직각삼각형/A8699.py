@@ -1,5 +1,5 @@
 '''
-Type : 
+Type :  
 '''
 import sys
 import math
